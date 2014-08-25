@@ -5,8 +5,12 @@ from django.db import models
 
 # Create your models here.
 
-#FORMULARIOS
+#EDICION DE MODELO USER
+User.add_to_class('direccion', models.FloatField(null=True,blank=True))
+User.add_to_class('telefono', models.PositiveIntegerField(null=True,blank=True))
+User.add_to_class('amigos', models.ManyToManyField('self', symmetrical=True,  blank=True))
 
+#FORMULARIOS
 class SignUpForm(ModelForm):
     class Meta:
         model = User

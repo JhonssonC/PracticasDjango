@@ -1,6 +1,6 @@
 [Profile]
 ID=WS
-Version=9
+Version=8
 [CT]
 trace=Y
 [Telnet5250]
@@ -22,6 +22,5 @@ PrinterType=IBM3812
 CuaKeyboard=2
 Language=Latin-America(Spanish)
 IBMDefaultKeyboard=N
-DefaultKeyboard=C:\Users\Jhonsson\AppData\Roaming\IBM\Client Access\Emulator\private\AS400.KMP
 [LastExitView]
 A=3 52 52 910 512 3 12 16 400 0 IBM3270— 284
