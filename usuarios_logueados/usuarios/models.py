@@ -6,15 +6,16 @@ from django.db import models
 # Create your models here.
 
 #EDICION DE MODELO USER
-User.add_to_class('usuarioSico', models.CharField(max_length=10, null=False, blank=False))
-User.add_to_class('contraseniaSico', models.CharField(max_length=10, null=False, blank=False))
+User.add_to_class('usuario_sico', models.CharField(max_length=10, null=False, blank=False))
+User.add_to_class('contrasenia_sico', models.CharField(max_length=10, null=False, blank=False))
 #User.add_to_class('amigos', models.ManyToManyField('self', symmetrical=True,  blank=True))
 
 #FORMULARIOS
 class SignUpForm(ModelForm):
     class Meta:
         model = User
-        fields = ['username', 'password', 'email', 'first_name', 'last_name', 'usuarioSico', 'contraseniaSico']
+        fields = ['username', 'password', 'email', 'first_name', 'last_name', 'usuario_sico', 'contrasenia_sico']
         widgets = {
             'password': forms.PasswordInput(),
+            'contrasenia_sico': forms.PasswordInput(),
         }
