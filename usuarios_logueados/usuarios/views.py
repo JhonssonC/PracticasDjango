@@ -4,7 +4,6 @@ from django.template.context import RequestContext
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirect
-import iSeries
 from usuarios.models import SignUpForm
 
 
@@ -19,8 +18,6 @@ def signup(request):
             email = form.cleaned_data["email"]
             first_name = form.cleaned_data["first_name"]
             last_name = form.cleaned_data["last_name"]
-            usuario_sico = form.cleaned_data["usuario_sico"]
-            contrasenia_sico = form.cleaned_data["contrasenia_sico"]
 
             # At this point, user is a User object that has already been saved
             # to the database. You can continue to change its attributes
@@ -28,8 +25,6 @@ def signup(request):
             user = User.objects.create_user(username, email, password)
             user.first_name = first_name
             user.last_name = last_name
-            user.usuario_sico = usuario_sico
-            user.contrasenia_sico = contrasenia_sico
 
             # Save new user attributes
             user.save()
@@ -51,10 +46,4 @@ def main(request):
 
 @login_required()
 def home(request):
-    logueadoEnSico = False
-    conn = iSeries.ConnectionManager()
-    availableConnection = conn.getAvailableConnection(request.user.usuario_sico, request.user.contrasenia_sico)
-    conn.openSession(availableConnection)
-    conn.setActiveSession(availableConnection)
-
-    return render_to_response('home.html', {'user': request.user, 'logueadoEnSico': logueadoEnSico}, context_instance=RequestContext(request))
+    return render_to_response('home.html', {'user': request.user}, context_instance=RequestContext(request))
