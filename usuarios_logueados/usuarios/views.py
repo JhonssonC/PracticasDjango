@@ -4,7 +4,8 @@ from django.template.context import RequestContext
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirect
-import iSeries
+import pythoncom
+from usuarios import iSeries
 from usuarios.models import SignUpForm
 
 
@@ -51,10 +52,11 @@ def main(request):
 
 @login_required()
 def home(request):
-    logueadoEnSico = False
+    pythoncom.CoInitialize()
     conn = iSeries.ConnectionManager()
-    availableConnection = conn.getAvailableConnection(request.user.usuario_sico, request.user.contrasenia_sico)
-    conn.openSession(availableConnection)
+    #print request.user.usuario_sico
+    #print request.user.contrasenia_sico
+    availableConnection = conn.getAvailableConnection()
+    conn.openSession(availableConnection, request.user.usuario_sico, request.user.contrasenia_sico)
     conn.setActiveSession(availableConnection)
-
-    return render_to_response('home.html', {'user': request.user, 'logueadoEnSico': logueadoEnSico}, context_instance=RequestContext(request))
+    return render_to_response('home.html', {'user': request.user, 'conn': conn}, context_instance=RequestContext(request))

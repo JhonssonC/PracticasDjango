@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iSeries/sico/CNEL.OWS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iSeries/sico/CNEL.WS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iSeries/Proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iSeries/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pruebaConexion/iSeries/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/usuarios/prueba.py" />
+      <change type="DELETED" beforePath="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\iSeries\Proxy.py" afterPath="" />
+      <change type="DELETED" beforePath="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\iSeries\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\iSeries\sico\CNEL.OWS" afterPath="" />
+      <change type="DELETED" beforePath="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\iSeries\sico\CNEL.WS" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usuarios/templates/home.html" afterPath="$PROJECT_DIR$/usuarios/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usuarios/models.py" afterPath="$PROJECT_DIR$/usuarios/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usuarios/templates/signup.html" afterPath="$PROJECT_DIR$/usuarios/templates/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../practicaConCarratala/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../practicaConCarratala/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usuarios/views.py" afterPath="$PROJECT_DIR$/usuarios/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../practicaConCarratala/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../practicaConCarratala/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pruebaConexion/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../pruebaConexion/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Datos\Documents\GitHub\ProacticasDjango\pruebaConexion\iSeries.py" afterPath="$PROJECT_DIR$/../pruebaConexion/iSeries2.py" />
     </list>
     <ignored path="usuarios_logueados.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,15 +22,17 @@
     <file path="$PROJECT_DIR$/../practicaConCarratala/practicaConCarratala/urls.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1408829470273" ignored="false" />
     <file path="/base.html" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1408829811590" ignored="false" />
     <file path="/login.html" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1408859285516" ignored="false" />
-    <file path="/views.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410112999709" ignored="false" />
-    <file path="/Dummy.txt" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410148395991" ignored="false" />
+    <file path="/views.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410278697240" ignored="false" />
+    <file path="/Dummy.txt" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410268299792" ignored="false" />
     <file path="/signup.html" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1409284061594" ignored="false" />
-    <file path="/home.html" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410059974521" ignored="false" />
-    <file path="/__init__.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410147832984" ignored="false" />
+    <file path="/home.html" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410208954455" ignored="false" />
+    <file path="/__init__.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410280606118" ignored="false" />
     <file path="/start_script.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1409802366970" ignored="false" />
     <file path="/Python Console" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1409802444661" ignored="false" />
     <file path="/Django Console" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1409802516993" ignored="false" />
     <file path="/iSeries.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410060112824" ignored="false" />
+    <file path="/prueba.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410273213987" ignored="false" />
+    <file path="/dynamic.py" changelist="c668a1b2-dd8b-4aa1-a790-f10ffc1b353a" time="1410276523827" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,27 +60,38 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuarios_logueados/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Proxy.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iSeries/Proxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="209" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="69" column="32" selection-start="1920" selection-end="1935" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iSeries/__init__.py">
+        <entry file="file://$PROJECT_DIR$/usuarios/iSeries/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="27" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.58357346">
+            <state line="87" column="34" selection-start="3212" selection-end="3212" vertical-scroll-proportion="2.764486">
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pythoncom.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pythoncom.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="43" selection-start="81" selection-end="113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prueba.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usuarios/prueba.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="77" selection-end="101" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +100,10 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuarios/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="41" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="60" column="46" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,7 +111,7 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuarios/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="36" selection-start="582" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="41" column="30" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,11 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/signup.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/usuarios_logueados/urls.py" />
-        <option value="$PROJECT_DIR$/usuarios/templates/base.html" />
         <option value="$PROJECT_DIR$/usuarios/templates/login.html" />
         <option value="$PROJECT_DIR$/usuarios_logueados/settings.py" />
         <option value="$PROJECT_DIR$/usuarios/templates/signup.html" />
@@ -142,18 +151,23 @@
         <option value="$PROJECT_DIR$/usuarios/models.py" />
         <option value="C:/Python27/Lib/site-packages/django/contrib/auth/views.py" />
         <option value="C:/Python27/Lib/site-packages/django/forms/forms.py" />
-        <option value="$PROJECT_DIR$/usuarios/templates/home.html" />
         <option value="$PROJECT_DIR$/conexion/iSeries.py" />
-        <option value="$PROJECT_DIR$/usuarios/views.py" />
         <option value="$PROJECT_DIR$/iSeries/__init__.py" />
+        <option value="$PROJECT_DIR$/usuarios/templates/home.html" />
+        <option value="$APPLICATION_HOME_DIR$/helpers/pycharm/django_manage.py" />
+        <option value="C:/Python27/Lib/site-packages/win32com/client/__init__.py" />
+        <option value="C:/Python27/Lib/site-packages/win32com/client/dynamic.py" />
+        <option value="$PROJECT_DIR$/usuarios/prueba.py" />
+        <option value="$PROJECT_DIR$/usuarios/views.py" />
+        <option value="$PROJECT_DIR$/usuarios/iSeries/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -242,39 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios_logueados" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios_logueados" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="iSeries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios_logueados" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios_logueados" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iSeries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sico" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,9 +267,9 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pruebaConexion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -313,11 +295,31 @@
       <recent name="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\conexion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\usuarios" />
       <recent name="D:\Datos\Documents\GitHub\ProacticasDjango\usuarios_logueados\iSeries" />
       <recent name="D:\Datos\PycharmProjects\usuarios_logueados\usuarios" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.usuarios_logueados">
+  <component name="RunManager" selected="Python.prueba">
+    <configuration default="false" name="prueba" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/usuarios" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="usuarios_logueados" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/usuarios/prueba.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,9 +433,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.usuarios_logueados" />
+      <item index="1" class="java.lang.String" itemvalue="Python.prueba" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.prueba" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -482,18 +490,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.6935933" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14800514" sideWeight="0.6935933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15227273" sideWeight="0.6948882" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23745173" sideWeight="0.2869081" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30640668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30640668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30375427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -567,43 +575,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/usuarios/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="297" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/shortcuts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="4" selection-start="4816" selection-end="4816" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="48" selection-start="1345" selection-end="1363" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="30" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.28323698" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="34" selection-start="6812" selection-end="6826" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/loading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="322" column="29" selection-start="12859" selection-end="12869" vertical-scroll-proportion="0.7297688" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="12" selection-start="4589" selection-end="4597" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="26" selection-start="116" selection-end="121" vertical-scroll-proportion="0.12762763" />
@@ -626,37 +597,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/django_manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="475" selection-end="475" vertical-scroll-proportion="0.7322835" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="582" selection-end="594" vertical-scroll-proportion="0.0">
+        <state line="41" column="30" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iSeries/Proxy.py">
+    <entry file="file://C:/Python27/Lib/site-packages/win32/lib/pywintypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="209" selection-end="313" vertical-scroll-proportion="0.0">
+        <state line="10" column="71" selection-start="679" selection-end="679" vertical-scroll-proportion="-1.8802084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuarios/iSeries/Proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="223" selection-end="327" vertical-scroll-proportion="0.21026894">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/usuarios_logueados/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="69" column="32" selection-start="1920" selection-end="1935" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/win32com/client/gencache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="448" column="63" selection-start="16017" selection-end="16022" vertical-scroll-proportion="0.5606469">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/win32com/client/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="25" selection-start="1583" selection-end="1591" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410275696358" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/win32com/client/dynamic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="4" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-5.12">
+          <folding>
+            <element signature="e#577#587#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="41" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
+        <state line="60" column="46" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuarios/prueba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="77" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pythoncom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="43" selection-start="81" selection-end="113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iSeries/__init__.py">
+    <entry file="file://$PROJECT_DIR$/usuarios/iSeries/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="27" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.58357346">
+        <state line="87" column="34" selection-start="3212" selection-end="3212" vertical-scroll-proportion="2.764486">
           <folding>
             <element signature="e#24#46#0" expanded="true" />
           </folding>

@@ -1,4 +1,4 @@
-import iSeries
+from usuarios import iSeries
 
 __author__ = 'JC'
 

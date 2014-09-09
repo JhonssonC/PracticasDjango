@@ -11,7 +11,7 @@ class ConnectionManager:
 
     :rtype : object
     """
-    self.PCommConnMgr = win32com.client.Dispatch("PCOMM.autECLConnMgr")
+    self.PCommConnMgr = win32com.client.Dispatch('PCOMM.autECLConnMgr')
     self.connList = self.PCommConnMgr.autECLConnList
     self.activeSession = None
     self.sessions = {}
@@ -42,9 +42,9 @@ class ConnectionManager:
         if session is not None:
             tempSession= self.sessions[session]
         if row is None or col is None:
-            tempSession.session.autECLPS.SendKeys("%s" % key)
+            tempSession.autECLPS.SendKeys("%s" % key)
         else:
-            tempSession.session.autECLPS.SendKeys("%s" % key, row, col)
+            tempSession.autECLPS.SendKeys("%s" % key, row, col)
         tempSession.autECLOIA.WaitForAppAvailable()
         tempSession.autECLOIA.WaitForInputReady()
         n+= 1
@@ -61,22 +61,28 @@ class ConnectionManager:
     #_ecloia= win32com.client.Dispatch("PCOMM.autECLOIA")
     _session.SetConnectionByName(session)
     #_ecloia.SetConnectionByName(session)
-    self.sessions[session]= _session
-    if not _session.Ready:
-        print "la session no esta lista"
-        return False
-    else:
+    self.sessions[session] = _session
+    segundos = 5
+    while not _session.Ready and segundos >= 0:
+        print "la session no esta lista aun ..."
+        #return False
+        sleep(1)
+        segundos = segundos - 1
+
+    if segundos>=0:
         _session.autECLOIA.WaitForAppAvailable()
         _session.autECLOIA.WaitForInputReady()
-        #self.activeSession = session
+        print self.getText( 22, 50, length= 8, session= session)
+        print self.getText( 21, 50, length= 12, session= session)
         if str(self.getText( 21, 50, length= 12, session= session))=='USUARIO    :' and str(self.getText( 22, 50, length= 8, session= session))=='CONTRASE':
             self.sendKeys(1, usuario, row= 21, col= 63, session= session)
             self.sendKeys(1, contrasenia, row= 22, col= 63, session= session)
             self.sendKeys(3, '[enter]', session= session)
+            self.estado = True
 
   def openProgram(self):
       print "Abriendo el Programa, Sesion: {0}".format(self.connection)
-      self.PCommConnMgr.StartConnection("PROFILE=.\sico\CNEL.WS CONNNAME={0} WINSTATE=MIN".format(self.connection))
+      self.PCommConnMgr.StartConnection("PROFILE=.\usuarios\iSeries\sico\CNEL.WS CONNNAME={0} WINSTATE=MIN".format(self.connection))
       # shell = win32com.client.Dispatch('WScript.Shell')
       # sleep(3)
       # shell.SendKeys(usuario, 0)
