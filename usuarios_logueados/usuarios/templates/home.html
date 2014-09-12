@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
  
 {% block content %}
-
+ 
     <table>
         <tr>
             <td>{{ user.username.label_tag }}</td>
@@ -41,22 +41,10 @@
         <tr>
             <td>{{ conn.estado }}</td>
         </tr>
-
+ 
     </table>
-
-    <script>
-        function calculate(){
-            usuarios.ayax.multiply(Dajax.process,{'a':$('#a').val(),'b':$('#b').val()});
-            /*document.getElementById('result').value = 30;*/
-        }
-    </script>
-
-    <br><br>
-    <input type="text" value="5" id="a"> x
-    <input type="text" value="6" id="b"> =
-    <input type="text" value="" id="result">
-    <input type="button" value="Multiply!" onclick="calculate();">
-    <br><br>
+ 
     <a href="{% url 'logout' %}">Logout</a>
+ 
  
 {% endblock %}
