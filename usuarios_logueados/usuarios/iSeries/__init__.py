@@ -77,7 +77,7 @@ class ConnectionManager:
         if str(self.getText( 21, 50, length= 12, session= session))=='USUARIO    :' and str(self.getText( 22, 50, length= 8, session= session))=='CONTRASE':
             self.sendKeys(1, usuario, row= 21, col= 63, session= session)
             self.sendKeys(1, contrasenia, row= 22, col= 63, session= session)
-            self.sendKeys(3, '[enter]', session= session)
+            self.sendKeys(6, '[enter]', session= session)
             self.estado = True
 
   def openProgram(self):

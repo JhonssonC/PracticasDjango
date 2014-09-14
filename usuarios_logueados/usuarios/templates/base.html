@@ -1,7 +1,12 @@
+{% load dajaxice_templatetags %}
+{% load staticfiles %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
+<html lang="es">
 <head>
+    <script type="text/javascript" src="{% static 'js/jquery17.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dajax/jquery.dajax.core.js' %}"></script>
     <title>{% block title %}{% endblock %}</title>
+    {% dajaxice_js_import 'nocsrf' %}
 </head>
 <body>
     <h1>Mi Prueba de Usuarios</h1>
