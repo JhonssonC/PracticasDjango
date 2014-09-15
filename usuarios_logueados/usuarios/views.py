@@ -1,9 +1,11 @@
+from dajax.core import Dajax
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirect
+from django_ajax.decorators import ajax
 import pythoncom
 from usuarios import iSeries
 from usuarios.models import SignUpForm
@@ -60,3 +62,12 @@ def home(request):
     conn.openSession(availableConnection, request.user.usuario_sico, request.user.contrasenia_sico)
     conn.setActiveSession(availableConnection)
     return render_to_response('home.html', {'user': request.user, 'conn': conn}, context_instance=RequestContext(request))
+
+@ajax
+def multiply(request):
+    a = int(request.POST['a'])
+    b = int(request.POST['b'])
+    c = a * b
+    dajax = Dajax()
+    dajax.assign('#result','value',str(c))
+    return dajax.calls

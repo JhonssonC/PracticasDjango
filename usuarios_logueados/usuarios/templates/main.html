@@ -15,8 +15,13 @@
     <input type="button" value="Multiply!" onclick="calculate();">
 
     <script type="text/javascript">
-    function calculate(){
-        Dajaxice.usuarios.multiply(Dajax.process,{'a':$('#a').val(),'b':$('#b').val()})
+    function calculate()
+    {
+        ajaxPost('/multiply', {'a':$('#a').val(),'b':$('#b').val()}, function(content){
+            //onSuccess
+            castear(content);
+            //alert(content[0]);
+        });
     }
     </script>
  
